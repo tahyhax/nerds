@@ -1,0 +1,51 @@
+.filter
+	.filter__price
+		.filter__price-title Стоимость:
+		.filter__price-block
+			.filter__price-range
+		.filter__price-inputs
+			.filter__price-group
+				label.filter__price-label От
+				input.filter__price-input.filter__price-input--start(type="number" placeholder="0")
+			.filter__price-group
+				label.filter__price-label До
+				input.filter__price-input.filter__price-input--end(type="number" placeholder="15 000")
+	.filter__options
+		.filter__options-title Сетка:
+		.filter__options-items
+			.filter__options-item
+				label.filter__options-label Адаптивная
+					input.filter__options-radio(type="radio" checked="checked" name="grid")
+					span.filter__options-checkmark
+			.filter__options-item
+				label.filter__options-label Фиксированная
+					input.filter__options-radio(type="radio" name="grid")
+					span.filter__options-checkmark
+			.filter__options-item
+				label.filter__options-label Резиновая
+					input.filter__options-radio(type="radio" name="grid")
+					span.filter__options-checkmark
+	.filter__options
+		.filter__options-title Особенности:
+		.filter__options-items
+			.filter__options-item
+				label.filter__options-label Слайдер
+					input.filter__options-checkbox(type="checkbox" checked="checked" name="feature")
+					span.filter__options-checkmark.filter__options-checkmark--checkbox
+			.filter__options-item
+				label.filter__options-label Блок преимуществ
+					input.filter__options-checkbox(type="checkbox" name="feature")
+					span.filter__options-checkmark.filter__options-checkmark--checkbox
+			.filter__options-item
+				label.filter__options-label Новости
+					input.filter__options-checkbox(type="checkbox" checked="checked" name="feature")
+					span.filter__options-checkmark.filter__options-checkmark--checkbox
+			.filter__options-item
+				label.filter__options-label Галерея
+					input.filter__options-checkbox(type="checkbox" name="feature")
+					span.filter__options-checkmark.filter__options-checkmark--checkbox
+			.filter__options-item
+				label.filter__options-label Корзина
+					input.filter__options-checkbox(type="checkbox" name="feature")
+					span.filter__options-checkmark.filter__options-checkmark--checkbox
+	+btn("#", "Показать")(class="btn btn--big btn--gray")

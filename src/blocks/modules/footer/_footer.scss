@@ -1,0 +1,36 @@
+.footer {
+	@include wrapper();
+	display: flex;
+	align-items: center;
+	padding: 70px 0;
+	&__socials {
+		width: 260px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__social {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 79px;
+		height: 79px;
+		border-radius: 50%;
+		background: darken($light-gray, 5%);
+		transition: .2s;
+		&:hover {
+			background: $red-hover;
+		}
+	}
+	&__social-img {
+		height: 25px;
+	}
+	&__promo {
+		margin-left: 140px;
+	}
+	&__promo-title {
+		color: #000;
+		font-size: 36px;
+		font-weight: $font-bold;
+		margin-bottom: 12px;
+	}
+}

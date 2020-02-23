@@ -1,0 +1,26 @@
+.services {
+	margin-bottom: 80px;
+	&__items {
+		display: flex;
+	}
+	&__item {
+		width: 300px;
+		margin-right: 100px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__img {
+		margin-bottom: 30px;
+	}
+	&__title {
+		color: #000;
+		font-size: 24px;
+		font-weight: $font-bold;
+		text-transform: uppercase;
+		margin-bottom: 26px;
+	}
+	&__subtitle {
+		margin-bottom: 35px;
+	}
+}

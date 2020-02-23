@@ -1,0 +1,45 @@
+.btn {
+	display: block;
+	width: 240px;
+	padding: 13px 0;
+	border-radius: 3px;
+	color: #fff;
+	background: $red;
+	font-weight: $font-medium;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: .2s;
+	&:hover {
+		background: $red-hover;
+	}
+	&--green {
+		background: $green;
+
+		&:hover {
+			background: $green-hover;
+		}
+	}
+	&--yellow {
+		background: $yellow;
+		&:hover {
+			background: $yellow-hover;
+		}
+	}
+	&--gray {
+		color: #000;
+		background: $light-gray;
+		&:hover {
+			background: darken($light-gray, 10%);
+		}
+	}
+	&--sm {
+		width: 160px;
+	}
+	&--md {
+		width: 220px;
+	}
+	&--big {
+		width: 260px;
+	}
+}

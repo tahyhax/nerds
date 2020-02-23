@@ -1,0 +1,18 @@
+.overlay
+	form.overlay__form(action="#" method="post")
+		.overlay__form-content
+			.overlay__form-top
+				.overlay__form-title Напишите нам
+				img.overlay__form-close(src="../img/sprites/sprite.svg#close-cross")
+			.overlay__form-bottom
+				.overlay__form-inputs
+					.overlay__form-group
+						label.overlay__form-label(for="name") Ваше имя:
+							input.overlay__form-input(type="text" name="name" placeholder="Имя, фамилия" required)
+					.overlay__form-group
+						label.overlay__form-label(for="email") Ваш e-mail:
+							input.overlay__form-input(type="email" name="email" placeholder="email@example.com" required)
+				.overlay__form-msg
+					label.overlay__form-label(for="msg") Текст письма:
+						textarea.overlay__form-textarea(name="msg" placeholder="В свободной форме")
+				+btn("#", "Отправить")(class="btn btn--big")

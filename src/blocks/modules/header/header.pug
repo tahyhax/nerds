@@ -1,0 +1,25 @@
+header.header
+	.header__top
+		h1.header__logo
+			a.header__logo-link(href="/")
+				img.header__logo-img(src="../img/header/logo.svg" alt="logo")
+		nav.header__nav
+			ul.header__nav-items
+				li.header__nav-item
+					if current === "index"
+						a.header__nav-link.header__nav-link--current(href="/") Студия
+					else
+						a.header__nav-link(href="/") Студия
+				li.header__nav-item
+					a.header__nav-link(href="#") Клиенты
+				li.header__nav-item
+					if current === "store"
+						a.header__nav-link.header__nav-link--current(href="store.html") Магазин
+					else
+						a.header__nav-link(href="store.html") Магазин
+				li.header__nav-item
+					a.header__nav-link(href="#") Контакты
+		a.header__basket(href="#") Корзина
+	if current === "store"
+		.header__bottom
+			h2.header__title Магазин готовых шаблонов

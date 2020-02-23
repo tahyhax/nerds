@@ -1,0 +1,52 @@
+.glide {
+	@include wrapper();
+	position: relative;
+	&__slide {
+		cursor: grab;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__description {
+		position: absolute;
+		max-width: 515px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&__title {
+		color: #000;
+		font-size: 55px;
+		font-weight: $font-medium;
+		line-height: 55px;
+		margin-bottom: 28px;
+	}
+	&__subtitle {
+		margin-bottom: 42px;
+	}
+	&__img {
+		display: flex;
+		min-height: 430px;
+		margin-left: auto;
+	}
+	&__bullets {
+		position: absolute;
+		left: 50%;
+		transform: translateY(-50%);
+		bottom: 96px;
+		width: 80px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__bullet {
+		cursor: pointer;
+		display: block;
+		width: 18px;
+		height: 18px;
+		border: 0;
+		background: transparent url("../img/slider/inactive-button.png");
+		&--active {
+			background: transparent url("../img/slider/active-button.png");
+		}
+	}
+}

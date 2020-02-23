@@ -1,0 +1,60 @@
+.products
+	.products__sorting
+		.products__sorting-title Сортировать:
+		.products__sorting-options
+			button.products__sorting-option.products__sorting-option--active По цене
+			button.products__sorting-option По типу
+			button.products__sorting-option По названию
+		.products__sorting-options
+			button.products__sorting-option
+				img(src="../img/icons/icon-down-dir.svg" alt="")
+			button.products__sorting-option.products__sorting-option--inactive
+				img(src="../img/icons/icon-up-dir.svg" alt="")
+	.products__items
+		.products__item
+			.products__info
+				.products__info-content
+					.products__info-title Sedona
+					.products__info-subtitle Информационный сайт для туристов
+					+btn("#", "9 900 руб.")(class="btn btn--sm")
+			img.products__item-img(src="../img/products/sedona.jpg" alt="sedona")
+		.products__item
+			.products__info
+				.products__info-content
+					.products__info-title Pink app
+					.products__info-subtitle Продуктовый лендинг приложения для iOS и Android
+					+btn("#", "9 900 руб.")(class="btn btn--sm")
+			img.products__item-img(src="../img/products/pink.jpg" alt="pink")
+		.products__item
+			.products__info
+				.products__info-content
+					.products__info-title Barbershop
+					.products__info-subtitle Сайт салоны красоты. Для мужчин, да
+					+btn("#", "9 900 руб.")(class="btn btn--sm")
+			img.products__item-img(src="../img/products/barbershop.jpg" alt="barbershop")
+		.products__item
+			.products__info
+				.products__info-content
+					.products__info-title Mishka
+					.products__info-subtitle Интернет-магазин  вязаных игрушек
+					+btn("#", "9 900 руб.")(class="btn btn--sm")
+			img.products__item-img(src="../img/products/mishka.jpg" alt="mishka")
+		.products__item
+			.products__info
+				.products__info-content
+					.products__info-title A plus
+					.products__info-subtitle Лендинг курсов повышения квалификации
+					+btn("#", "9 900 руб.")(class="btn btn--sm")
+			img.products__item-img(src="../img/products/aplus.jpg" alt="aplus")
+		.products__item
+			.products__info
+				.products__info-content
+					.products__info-title Кваст
+					.products__info-subtitle Промо-сайт производителя крафтового кваса
+					+btn("#", "9 900 руб.")(class="btn btn--sm")
+			img.products__item-img(src="../img/products/kvast.jpg" alt="kvast")
+	.products__nav
+		a.products__nav-link.products__nav-link--active(href="#") 1
+		a.products__nav-link(href="#") 2
+		a.products__nav-link(href="#") 3
+		+btn("#", "Следующая")(class="btn btn--big btn--gray")

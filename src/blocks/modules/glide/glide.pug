@@ -1,0 +1,28 @@
+.glide
+	.glide__track(data-glide-el="track")
+		.glide__slides
+			.glide__slide
+				.glide__description
+					h2.glide__title Долго, дорого, скрупулезно
+					.glide__subtitle Математически выверенный дизайн для вашего сайта или мобильного приложения
+					+btn("#", "Узнать больше")(class="btn")
+				.glide__img
+					img(src="../img/slider/slide1.png" alt="slide")
+			.glide__slide
+				.glide__description
+					h2.glide__title Любим математику как никто другой
+					.glide__subtitle Никакого креатива, только математические формулы для расчета идеальных пропорций
+					+btn("#", "Узнать больше")(class="btn")
+				.glide__img
+					img(src="../img/slider/slide2.png" alt="slide")
+			.glide__slide
+				.glide__description
+					h2.glide__title Только ночь, только хардкор
+					.glide__subtitle Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается
+					+btn("#", "Узнать больше")(class="btn")
+				.glide__img
+					img(src="../img/slider/slide3.png" alt="slide")
+	.glide__bullets(data-glide-el="controls[nav]")
+		button.glide__bullet(data-glide-dir="=0")
+		button.glide__bullet(data-glide-dir="=1")
+		button.glide__bullet(data-glide-dir="=2")

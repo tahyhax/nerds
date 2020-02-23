@@ -1,0 +1,48 @@
+extends layouts/default
+include ../blocks/components/btn/btn
+
+block variables
+	- const title = "Nerds"
+	- const current = "index"
+
+block content
+	.top-bg
+		include ../blocks/modules/header/header
+		include ../blocks/modules/glide/glide
+	main.main
+		include ../blocks/modules/services/services
+		include ../blocks/modules/about/about
+		include ../blocks/modules/partners/partners
+	include ../blocks/modules/map/map
+	include ../blocks/modules/footer/footer
+	include ../blocks/modules/overlay/overlay
+
+block scripts
+	script.
+		setTimeout(function () {
+			var elem = document.createElement("script");
+			elem.src = "//api-maps.yandex.ru/2.1/?load=package.standard&apikey=fe0f2a48-ac01-43fd-980e-4825f30544ee&lang=ru-RU&onload=getYaMap";
+			document.getElementsByTagName("body")[0].appendChild(elem);
+		}, 2000);
+
+		function getYaMap() {
+			const myMap = new ymaps.Map("map", {
+						center: [59.938631, 30.323055],
+						zoom: 16
+					}, {searchControlProvider: "yandex#search"}
+					),
+					myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+								hintContent: "",
+								balloonContent: ""
+							},
+							{
+								iconLayout: "default#image",
+								iconImageHref: "../img/map/map-marker.png",
+								iconImageSize: [231, 190],
+								iconImageOffset: [90, -120]
+							});
+			myMap.geoObjects.add(myPlacemark);
+		}
+	script(src="../js/main.js")
+	script(src="../js/swiper.js")
+	script(src="../js/vendor.js")

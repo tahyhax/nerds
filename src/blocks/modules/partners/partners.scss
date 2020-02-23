@@ -1,0 +1,29 @@
+.partners {
+	border-top: 2px solid $light-gray;
+	border-bottom: 2px solid $light-gray;
+	padding: 45px 0;
+	&__items {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		&:not(:last-of-type):after {
+			content: "";
+			display: block;
+			width: 2px;
+			height: 52px;
+			background: $light-gray;
+			margin-left: 54px;
+		}
+	}
+	&__link {
+		filter: grayscale(100%) opacity(20%);
+		transition: .2s;
+		&:hover {
+			filter: none;
+		}
+	}
+}
